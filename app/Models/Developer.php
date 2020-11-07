@@ -10,4 +10,10 @@ class Developer extends Model
     use HasFactory;
 
     public $timestamps = null;
+
+    public function Jobs()
+    {
+        return $this->hasMany('App\Models\Job', 'difficult', 'difficult')
+            ->orderBy('estimated_duration');
+    }
 }
