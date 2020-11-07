@@ -191,6 +191,10 @@
             weeks++;
         }
 
+        if(hours == null){
+            hours = 0;
+        }
+
         $('#totalHours').val(hours + " Saat / " + weeks + " Hafta");
     }
 </script>
