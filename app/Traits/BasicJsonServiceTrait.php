@@ -39,7 +39,7 @@ trait BasicJsonServiceTrait
         $url = $url ?? ($this->url ?? config('services.' . config('services.default-provider') . '.domain', ""));
 
         if (!$url) {
-            return 0; //TODO
+            return 0;
         }
 
         $request = Http::get($url);

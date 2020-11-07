@@ -1,7 +1,17 @@
 LARAVEL 8.13
 
-php artisan feed:jobs
+Veritabanı bilgileri .env altında düzenlenmeli, test için MySQL kullanıldı<br>
 
-php artisan migrate
+Composer paketleri ve php paketleri kurulduktan sonra serve etmeden önce çalışmaya hazırlanması için<br>
 
-php artisan db:seed --class=DeveloperSeeder
+Tabloların kurulumu için<br>
+
+<b>php artisan migrate</b>
+
+Örnek Dataların işlenmesi için<br>
+
+<b>php artisan db:seed --class=DeveloperSeeder</b>
+
+Verilerin çekilmesi için<br>
+
+<b>php artisan feed:jobs</b>

@@ -40,7 +40,8 @@ class FeedJobsFromAPI extends Command
      */
     public function handle()
     {
-        //TODO
+        DB::table('jobs')->truncate();
+
         Service::driver('first-provider');
         Service::instance()->sendRequest();
         DB::table('jobs')->insert(Service::instance()->getMappedArray());
